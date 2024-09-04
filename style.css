@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust values for desired shadow effect */
+}
