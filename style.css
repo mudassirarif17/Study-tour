@@ -5,3 +5,15 @@
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust values for desired shadow effect */
 }
+
+.img-shadow {
+    box-shadow: 0 4px 8px rgba(100, 99, 99, 0.2); /* Adjust values for desired shadow effect */
+}
+
+
+.mybg{
+    background: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.9)) , url('./img/herobg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

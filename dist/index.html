@@ -13,7 +13,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <title>Study Tour</title>
     <style>
-        html{
+        html {
             scroll-behavior: smooth;
         }
 
@@ -82,20 +82,20 @@
             }
         }
     </style>
-  <script type="module" crossorigin src="/assets/app-DIf_VpHk.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/app-D89F9z5_.css">
+  <script type="module" crossorigin src="/assets/app-BjdozORR.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/app-Bq1C0sZ7.css">
 </head>
 
 <body>
     <!-- Navbar Start -->
-    <div class="navbar bg-[#000000]">
-        <div class="sub-nav flex items-center justify-between w-[90vw] mx-auto">
+    <div class="navbar bg-[#ffff] sticky top-0 z-[20] shadow-xl">
+        <div class="sub-nav flex items-center justify-between w-[90vw] h-[12vh] mx-auto">
 
             <div class="logo">
                 <img class="w-[150px]" src="/assets/newlogo-removebg-preview-BNhagA2w.png" alt="">
             </div>
 
-            <ul class="nav-item hidden text-white md:flex space-x-8 cursor-pointer font-semibold">
+            <ul class="nav-item hidden md:flex space-x-8 cursor-pointer font-semibold">
                 <li class="text-[#2BB673]"><a href="/">Home</a></li>
                 <li><a href="#country">Countries</a></li>
                 <li><a href="#whatwedo">What We Do</a></li>
@@ -112,7 +112,7 @@
 
         </div>
 
-        <ul id="mbl-menu" class="mbl-menu md:hidden block text-white space-y-5 py-6 px-4">
+        <ul id="mbl-menu" class="mbl-menu md:hidden block space-y-5 py-6 px-4">
             <li class="text-[#2BB673]"><a href="/">Home</a></li>
             <li><a href="#country">Countries</a></li>
             <li><a href="#whatwedo">What We Do</a></li>
@@ -125,10 +125,10 @@
     </div>
 
     <!-- Hero section start -->
-    <div class="hero bg-[#2BB673] py-10 md:h-[88vh] flex items-center">
+    <div class="hero mybg py-10 md:h-[88vh] flex items-center">
         <div class="w-[87vw] mx-auto">
-            <h1 class="text-white text-4xl mb-3">28 June to 10 July</h1>
-            <h1 class="text-white md:text-6xl my-3">STUDY ABROAD EXPO 2024</h1>
+            <h1 class="text-white md:text-4xl mb-3">28 June to 10 July</h1>
+            <h1 class="text-white text-4xl md:text-6xl my-3"><span id="element"></span></h1>
             <p class="text-white font-light mt-5">Explore the world of opportunities with free entry, individual
                 consultation and learn about <br> new scholarships. HYDERABAD - KARACHI - LAHORE - ISLAMABAD -
                 RAWALPINDI - SIALKOT - <br> JHELUM - GUJRAT - PESHAWAR - FAISALABAD - MULTAN - BAHAWALPUR - SARGODHA -
@@ -159,8 +159,8 @@
                     <img class="w-[120px]" src="/assets/newlogo-removebg-preview-BNhagA2w.png" alt="">
                 </div>
                 <div class="flex justify-center">
-                    <button
-                        class="border mt-10 hover:bg-[#000000] hover:text-[#ffff] border-[#2BB673] text-[#2BB673] px-8 py-1 hover:border-[#000000] rounded-2xl font-semibold">Australia</button>
+                    <a href="./europe.html"
+                        class="border mt-10 hover:bg-[#000000] hover:text-[#ffff] border-[#2BB673] text-[#2BB673] px-8 py-1 hover:border-[#000000] rounded-2xl font-semibold">Europe</a>
                 </div>
             </div>
 
@@ -612,6 +612,9 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+        integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -696,6 +699,15 @@
 
 
         });
+
+        var typed = new Typed('#element', {
+            strings: ['STUDY ABROAD EXPO 2024', 'Kon Tehami kon Tehami'],
+            typeSpeed: 50,
+            loop: true,
+            loopCount: Infinity,
+            backSpeed: 50,
+        });
+
     </script>
 
 </body>
