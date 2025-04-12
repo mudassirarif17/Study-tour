@@ -12,6 +12,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Study Tour</title>
     <style>
         html {
@@ -33,7 +34,7 @@
         } */
 
         .slider-country .slick-slide {
-            height: 600px;
+            height: 200px;
             /* width: 500px; */
             display: flex;
             margin: 0px 12px;
@@ -96,10 +97,10 @@
         <div class="sub-nav flex items-center justify-between w-[90vw] h-[10vh] mx-auto">
 
             <div class="logo">
-                <img class="w-[130px]" src="./img/newlogo-removebg-preview.png" alt="">
+                <img class="w-[100px] lg:w-[130px]" src="./img/newlogo-removebg-preview.png" alt="">
             </div>
 
-            <ul class="nav-item hidden md:flex space-x-8 cursor-pointer font-semibold text-xl">
+            <ul class="nav-item hidden md:flex space-x-8 cursor-pointer font-semibold md:text-lg ">
                 <li class="text-[#2BB673]"><a href="/">Home</a></li>
                 <li><a href="#whatwedo">What We Do</a></li>
                 <li><a href="#whywechoose">Why We Choose</a></li>
@@ -109,7 +110,7 @@
             </ul>
 
             <div class="btn hidden md:block">
-                <button class="bg-[#2BB673] text-white px-5 py-2 font-semibold text-xl rounded-lg">Schedule
+                <button class="bg-[#2BB673] text-white px-4 py-2 font-semibold text-lg rounded-lg">Schedule
                     Appointment</button>
             </div>
 
@@ -151,19 +152,6 @@
         </div>
     </div>
 
-    <!--New Country Cards  -->
-
-    <div class="cards w-[85vw] mx-auto">
-        <div class="card cursor-pointer shadow-lg rounded-lg w-[25vw]">
-            <div class="img flex justify-center px-5 pt-10">
-                <img class="" src="https://cdn.pixabay.com/photo/2024/01/29/14/12/boy-8539958_1280.jpg" alt="">
-            </div>
-            <div class="flex justify-center">
-                <a href="./europe.html"
-                    class="border my-10 hover:bg-[#000000] hover:text-[#ffff] border-[#2BB673] text-[#2BB673] px-32 py-2 font-bold hover:border-[#000000] rounded-3xl text-xl">Canada</a>
-            </div>
-        </div>
-    </div>
 
     <!--Choose Countries  -->
     <div id="country" class="choose-countries mt-10 md:mt-20">
@@ -180,17 +168,8 @@
             </div>
         </div>
         <div class="mt-20 slider-country bottom w-[88vw] mx-auto">
-            <div class="card cursor-pointer shadow-lg rounded-lg w-[50vw]">
-                <div class="img flex justify-center px-5 pt-10">
-                    <img class="" src="https://cdn.pixabay.com/photo/2024/01/29/14/12/boy-8539958_1280.jpg" alt="">
-                </div>
-                <div class="flex justify-center">
-                    <a href="./europe.html"
-                        class="border my-10 hover:bg-[#000000] hover:text-[#ffff] border-[#2BB673] text-[#2BB673] px-32 py-2 font-bold hover:border-[#000000] rounded-3xl text-xl">Canada</a>
-                </div>
-            </div>
 
-            <!-- <div class="card shadow-lg rounded-lg ">
+            <div class="card shadow-lg rounded-lg ">
                 <div class="img flex justify-center">
                     <img class="w-[120px]" src="./img/newlogo-removebg-preview.png" alt="">
                 </div>
@@ -268,7 +247,8 @@
                     <button
                         class="border mt-10 hover:bg-[#000000] hover:text-[#ffff] border-[#2BB673] text-[#2BB673] px-8 py-1 hover:border-[#000000] rounded-2xl font-semibold">Australia</button>
                 </div>
-            </div> -->
+            </div>
+
         </div>
     </div>
 
@@ -324,6 +304,71 @@
                     <p class="text-center px-5 md:px-10 leading-8">Deciding what profession you should go into
                         is easier when you, have us helping you make an informed decision</p>
                 </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Counter -->
+    <div class="counter w-[80vw] mx-auto mt-10 mb-10 md:mb-16 grid gap-y-6 md:grid-cols-4  gap-x-4">
+
+        <div data-aos="zoom-in" class="counter-card cursor-pointer card shadow-lg px-6 pb-5 rounded-lg ">
+            <div class="top relative">
+                <div
+                    class="bg-[#2BB673] absolute right-0 w-[60px] rounded-b-lg flex justify-center items-center h-[60px]">
+                    <i class="text-white font-bold text-4xl fa-solid fa-hand-holding-heart"></i>
+                </div>
+            </div>
+            <div class="mid my-3">
+                <p class="text-4xl font-bold visa"><span id="visa"></span>+</p>
+            </div>
+            <div class="btm my-3">
+                <p class="text-gray-600">Years of Visa Expertise</p>
+            </div>
+        </div>
+
+        <div data-aos="zoom-in" class="counter-card cursor-pointer card shadow-lg px-6 pb-5 rounded-lg ">
+            <div class="top relative">
+                <div
+                    class="bg-[#2BB673] absolute right-0 w-[60px] rounded-b-lg flex justify-center items-center h-[60px]">
+                    <i class="text-white font-bold text-4xl fa-solid fa-location-dot"></i>
+                </div>
+            </div>
+            <div class="mid my-3">
+                <p class="text-4xl font-bold visa"><span id="studyDestinations"></span>+</p>
+            </div>
+            <div class="btm my-3">
+                <p class="text-gray-600">Study destinations covered</p>
+            </div>
+        </div>
+
+        <div data-aos="zoom-in" class="counter-card cursor-pointer card shadow-lg px-6 pb-5 rounded-lg ">
+            <div class="top relative">
+                <div
+                    class="bg-[#2BB673] absolute right-0 w-[60px] rounded-b-lg flex justify-center items-center h-[60px]">
+                    <i class="text-white font-bold text-4xl fa-solid fa-building"></i>
+                </div>
+            </div>
+            <div class="mid my-3">
+                <p class="text-4xl font-bold visa"><span id="officesAcross"></span>+</p>
+            </div>
+            <div class="btm my-3">
+                <p class="text-gray-600">Offices across the Globe</p>
+            </div>
+        </div>
+
+        <div data-aos="zoom-in" class="counter-card cursor-pointer card shadow-lg px-6 pb-5 rounded-lg ">
+            <div class="top relative">
+                <div
+                    class="bg-[#2BB673] absolute right-0 w-[60px] rounded-b-lg flex justify-center items-center h-[60px]">
+                    <i class="text-white font-bold text-4xl fa-regular fa-hand-point-up"></i>
+                </div>
+            </div>
+            <div class="mid my-3">
+                <p class="text-4xl font-bold visa"><span id="globalUniversities"></span>+</p>
+            </div>
+            <div class="btm my-3">
+                <p class="text-gray-600">Global Universities Options</p>
             </div>
         </div>
 
@@ -410,11 +455,13 @@
 
     <!-- Latest news -->
     <div id="blog" class="latest-news my-20">
+
         <div class="top">
             <h1 class="text-[#2BB673] text-2xl font-semibold text-center my-2">Latest News</h1>
             <p class="text-5xl font-bold text-center">Something from our latest blog</p>
         </div>
-        <div class="btm w-[90vw] mx-auto flex-col md:flex-row flex justify-between">
+
+        <div class="btm w-[90vw] mx-auto flex-col md:flex-row flex justify-between items-center">
 
             <div class="my-10 md:w-[26vw]">
                 <img src="https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_640.jpg" alt="">
@@ -652,6 +699,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
         integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -745,8 +793,63 @@
             backSpeed: 50,
         });
 
+        let visa = setInterval(visaCounter, 100);
+        let visaCount = 0;
+
+        function visaCounter() {
+            if (visaCount == 20) {
+                clearInterval(visa);
+            }
+            visaCount++;
+            document.getElementById("visa").innerHTML = visaCount;
+
+        }
+
+        let studyDestinations = setInterval(studyDestinationsCounter, 100);
+        let studyDestinationsCount = 0;
+
+        function studyDestinationsCounter() {
+            if (studyDestinationsCount === 59) {
+                clearInterval(studyDestinations);
+            }
+            studyDestinationsCount++;
+            document.getElementById("studyDestinations").innerHTML = studyDestinationsCount;
+
+        }
+
+
+        let officesAcross = setInterval(officesAcrossCounter, 100);
+        let officesAcrossCount = 0;
+
+        function officesAcrossCounter() {
+            if (studyDestinationsCount === 30) {
+                clearInterval(officesAcross);
+            }
+            officesAcrossCount++;
+            document.getElementById("officesAcross").innerHTML = officesAcrossCount;
+
+        }
+
+        let globalUniversities = setInterval(globalUniversitiesCounter, 5);
+        let globalUniversitiesCount = 0;
+
+        function globalUniversitiesCounter() {
+            if (globalUniversitiesCount === 2500) {
+                clearInterval(globalUniversities);
+            }
+            globalUniversitiesCount++;
+            document.getElementById("globalUniversities").innerHTML = globalUniversitiesCount;
+
+        }
+
+       
     </script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+         AOS.init();
+    </script>
 </body>
 
 </html>
